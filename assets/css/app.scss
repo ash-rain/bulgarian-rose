@@ -1,0 +1,56 @@
+$primary: #f23b74;
+
+@import "~bootstrap/scss/bootstrap";
+
+header {
+    .heading {
+        padding: 1em 0 2em 0;
+        
+        h1 > a {
+            color: #fff;
+
+            img.logo {
+                width: 1em;
+                height: 1em;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+nav {
+    background-color: rgba(255,255,255,0.33);
+    border-top: 1px solid #fff;
+
+    .nav-link {
+        color: #fff;
+        text-transform: uppercase;
+    }
+    
+    .nav-link.active,
+    .nav-link:hover {
+        color: $primary;
+    }
+}
+
+
+footer {
+    border-top: 1px solid #eee;
+    padding-top: 1em;
+}
+
+.page-content {
+    padding: 1em 0 4em 0;
+}
+
+.landing-bg {
+    background-image: url('/images/roses.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.video-player {
+    background-color: #000;
+}

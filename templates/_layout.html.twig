@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Bulgarian Rose{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block stylesheets %}
+    {{ encore_entry_link_tags('app') }}
+    {% endblock %}
+</head>
+
+<body>
+    <header id="header-container" class="landing-bg">
+        <div class="heading container">
+            <h1>
+                <a href="/">
+                    <img src="/images/logo.png" class="logo">
+                    Bulgarian Rose
+                </a>
+            </h1>
+        </div>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="content-container">
+        {% block body %}{% endblock %}
+    </section>
+    <footer id="footer-container" class="container-fluid">
+        <p class="text-right text-muted">
+            &copy; 2020 NetShell ltd.
+        </p>
+        <p class="text-right">
+            <span class="badge badge-light">Made</span>
+            <span class="badge badge-success">In</span>
+            <span class="badge badge-danger">Bulgaria</span>
+        </p>
+    </footer>
+    {% block javascripts %}
+    {{ encore_entry_script_tags('app') }}
+    {% endblock %}
+</body>
+
+</html>

@@ -14,7 +14,10 @@
             <ul class="nav flex-column">
                 {% for category in categories %}
                 <li class="nav-item">
-                    <a class="nav-link" href="#">{{ category }}</a>
+                    <a class="nav-link" href="#">
+                        <i class="fa fa-folder-open"></i>
+                        {{ category }}
+                    </a>
                 </li>
                 {% endfor %}
             </ul>
@@ -27,7 +30,10 @@
                     <div class="product-link">
                         <img class="img-responsive img-thumbnail" src="/images/products/{{ product.id }}.jpg">
                         <div class="clearfix">
-                            <a href="#" class="btn btn-primary btn-block">Add To Cart</a>
+                            <a href="#" class="btn btn-primary btn-block">
+                                <i class="fa fa-cart-plus"></i>
+                                Add To Cart
+                            </a>
                         </div>
                         <div class="clearfix">
                             <span class="badge badge-dark float-right">&euro; 0.00</span>
@@ -42,11 +48,12 @@
         </div>
         <div class="col-sm-2">
             <h3>Your Order</h3>
-            <p>
+            <p class="text-info">
+                <i class="fa fa-shopping-cart"></i>
                 <i>Your cart is empty.</i>
                 <br>
-                <i>Add products to your order and proceed to checkout.</i>
             </p>
+            <p class="text-muted">Add products to your order and proceed to checkout.</p>
         </div>
     </div>
 </section>

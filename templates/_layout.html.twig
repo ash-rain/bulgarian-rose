@@ -19,17 +19,18 @@
                     Bulgarian Rose
                 </a>
             </h1>
+            <div>// Курсов проект по Уеб програмиране 1 на Боян Балкански</div>
         </div>
         <nav>
             <ul class="nav justify-content-center">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link {% if app.request.get('_route') == 'home' %}active{% endif %}" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Shop</a>
+                    <a class="nav-link {% if app.request.get('_route') == 'shop' %}active{% endif %}" href="/shop">Shop</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link {% if app.request.get('_route') == 'about' %}active{% endif %}" href="/about">About</a>
                 </li>
             </ul>
         </nav>

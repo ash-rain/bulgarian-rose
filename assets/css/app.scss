@@ -8,6 +8,7 @@ header {
         
         h1 > a {
             color: #fff;
+            text-shadow: 2px 2px 2px #000;
 
             img.logo {
                 width: 1em;
@@ -39,6 +40,10 @@ footer {
     padding-top: 1em;
 }
 
+.intro-content {
+    padding: 4em 0;
+}
+
 .page-content {
     padding: 1em 0 4em 0;
 }
@@ -53,4 +58,12 @@ footer {
 
 .video-player {
     background-color: #000;
+}
+
+.product-link {
+    margin-bottom: 2em;
+}
+
+.product-link .badge {
+    margin-top: .3em;
 }

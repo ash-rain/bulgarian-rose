@@ -1,0 +1,53 @@
+{% extends '_layout.html.twig' %}
+
+{% block body %}
+<section class="landing-bg">
+    <div class="container text-center intro-content text-white">
+        <h1>Shop</h1>
+        <p class="lead">Buy Original Bulgarian Rose Products</p>
+    </div>
+</section>
+<section class="page-content container">
+    <div class="row">
+        <div class="col-sm-2">
+            <h3>Categories</h3>
+            <ul class="nav flex-column">
+                {% for category in categories %}
+                <li class="nav-item">
+                    <a class="nav-link" href="#">{{ category }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="col-sm-8">
+            <h3 class="text-center">Products</h3>
+            <div class="row">
+                {% for product in products %}
+                <div class="col-6 col-md-4">
+                    <div class="product-link">
+                        <img class="img-responsive img-thumbnail" src="/images/products/{{ product.id }}.jpg">
+                        <div class="clearfix">
+                            <a href="#" class="btn btn-primary btn-block">Add To Cart</a>
+                        </div>
+                        <div class="clearfix">
+                            <span class="badge badge-dark float-right">&euro; 0.00</span>
+                            <a href="#">
+                                <b>{{ product.name }}</b>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <h3>Your Order</h3>
+            <p>
+                <i>Your cart is empty.</i>
+                <br>
+                <i>Add products to your order and proceed to checkout.</i>
+            </p>
+        </div>
+    </div>
+</section>
+{% endblock %}

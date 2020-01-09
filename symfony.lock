@@ -117,6 +117,9 @@
     "phpdocumentor/type-resolver": {
         "version": "1.0.1"
     },
+    "pmill/doctrine-array-hydrator": {
+        "version": "v0.1.6"
+    },
     "psr/cache": {
         "version": "1.0.1"
     },
